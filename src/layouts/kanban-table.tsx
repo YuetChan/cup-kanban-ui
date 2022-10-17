@@ -29,7 +29,6 @@ const KanbanTable = (props: KanbanTableProps) => {
 
   // ------------------ Task cache ------------------
   const tasksState = useSelector((state: AppState) => state.TasksCache);
-
   const { allTasksUpdate } = TasksCacheActions;
 
   // ------------------ Tasks search ------------------
@@ -37,7 +36,6 @@ const KanbanTable = (props: KanbanTableProps) => {
 
   // ------------------ Table ------------------
   const tableState = useSelector((state: AppState) => state.KanbanTable);
-
   const { refreshTable } = kanbanTableActions;
 
   // ------------------ Task update dialog ------------------
@@ -70,7 +68,7 @@ const KanbanTable = (props: KanbanTableProps) => {
   // ------------------ Meta ------------------
   const [ metaMp, setMetaMp ] = React.useState<Map<string, { headUUID: string, tailUUID: string }> | undefined>(undefined);
 
-  // ------------------ HTML ------------------
+  // ------------------ Html template ------------------
   const [ columnMp, setColumnMp ] = React.useState<Map<string, any> | undefined>(undefined);
 
   useEffect(() => {
@@ -275,7 +273,7 @@ const KanbanTable = (props: KanbanTableProps) => {
     borderRight: "1px solid #9e9e9e"
   }
 
-  // ------------------ HTML template ------------------
+  // ------------------ Html template ------------------
   const getHeader = (header: any) => {
     return (
       <div style={{

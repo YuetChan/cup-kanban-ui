@@ -44,7 +44,6 @@ const KanbanDrawer = (props: KanbanDrawerProps) => {
 
   // -------------- Projects cache --------------
   const projectsCacheState = useSelector((state: AppState) => state.ProjectsCache);
-
   const { selectActiveProject } = projectsCacheActions;
 
   // -------------- Projects create dialog --------------

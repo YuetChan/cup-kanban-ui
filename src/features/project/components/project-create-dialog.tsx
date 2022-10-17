@@ -15,7 +15,7 @@ interface ProjectCreateDialogProps {
   showLogout?: boolean,
 
   handleOnProjectCreateClick?: Function,
-  handleOnLogout?: Function,
+  handleOnLogoutClick?: Function,
   handleOnClose?: Function
 }
 
@@ -42,8 +42,8 @@ const ProjectCreateDialog = (props: ProjectCreateDialogProps) => {
   }
 
   const handleOnLogoutClick = () => {
-    if(props.handleOnLogout) {
-      props.handleOnLogout();
+    if(props.handleOnLogoutClick) {
+      props.handleOnLogoutClick();
     }
   }
 

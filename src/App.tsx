@@ -254,7 +254,7 @@ function App() {
           showLogout={ projectsCacheState._allProjects.length === 0 }
           handleOnProjectCreateClick = { (project: Project) => handleOnProjectCreateClick(project) } 
           handleOnClose={ handleOnProjectCreateDialogClose } 
-          handleOnLogout={ handleOnLogoutClick }/>  
+          handleOnLogoutClick={ handleOnLogoutClick } />  
       </div>
 
       <div>
